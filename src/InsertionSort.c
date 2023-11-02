@@ -1,4 +1,4 @@
-void _cdecl insertion_sort(int* arr, int L, int R)
+void __cdecl insertion_sort(int* arr, int L, int R)
 {
 	for (int i = L; i < R; i++)
 	{

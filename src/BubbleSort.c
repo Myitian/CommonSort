@@ -1,4 +1,4 @@
-void _cdecl bubble_sort(int* arr, int L, int R)
+void __cdecl bubble_sort(int* arr, int L, int R)
 {
 	int tmp;
 	for (int i = L; i < R; i++)
@@ -10,7 +10,7 @@ void _cdecl bubble_sort(int* arr, int L, int R)
 				arr[j - 1] = tmp;
 			}
 }
-void _cdecl bubble_sort_optimized(int* arr, int L, int R)
+void __cdecl bubble_sort_optimized(int* arr, int L, int R)
 {
 	int tmp;
 	char flag;

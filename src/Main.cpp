@@ -28,11 +28,12 @@ static void print(const int* arr, int l, int r, char sep = ' ', char end = '\n')
 		printf("%d", arr[l]);
 	putchar(end);
 }
+
 #define L 50
 int main()
 {
-	int  L_1 = L - 1, min = 0, max = 10;
-	int arr[L], tmp[L];
+	int  L_1 = L - 1, min = 0, max = 100;
+	int arr[L];
 
 	puts("Bubble Sort");
 	rand_fill(arr, 0, L_1, min, max);
@@ -65,7 +66,7 @@ int main()
 	puts("Quick Sort");
 	rand_fill(arr, 0, L_1, min, max);
 	print(arr, 0, L_1);
-	quick_sort_2way(arr, 0, L_1);
+	quick_sort(arr, 0, L_1);
 	print(arr, 0, L_1);
 	putchar('\n');
 
@@ -79,14 +80,14 @@ int main()
 	puts("3-way Quick Sort");
 	rand_fill(arr, 0, L_1, min, max);
 	print(arr, 0, L_1);
-	quick_sort_2way(arr, 0, L_1);
+	quick_sort_3way(arr, 0, L_1);
 	print(arr, 0, L_1);
 	putchar('\n');
 
 	puts("Merge Sort");
 	rand_fill(arr, 0, L_1, min, max);
 	print(arr, 0, L_1);
-	merge_sort(arr, tmp, 0, L_1);
+	merge_sort(arr, 0, L_1, NULL);
 	print(arr, 0, L_1);
 	putchar('\n');
 }

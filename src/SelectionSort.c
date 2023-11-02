@@ -1,4 +1,4 @@
-void _cdecl selection_sort(int* arr, int L, int R)
+void __cdecl selection_sort(int* arr, int L, int R)
 {
 	for (int i = L; i < R; i++)
 	{
